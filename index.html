@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <h1>Country Quiz</h1>
+            <p>Select A Game Mode:</p>
+            <button onclick="startCapital()">Capitals Quiz</button>
+            <button onclick="startFlag()">Flags Quiz</button>
+        </div>
+    </div>
+
+    <div class="capitalsQuiz">
+        <div class="container capitalQuizContainer">
+            <h1>Capital Quiz</h1>
+            <div class="game">
+                <p><span class="capitalCity">London</span> is the capital of :</p>
+                <div class="options">
+                    <button onclick="capitalSubmit(this)" class="option option1">algeria</button>
+                    <button onclick="capitalSubmit(this)" class="option option2">United states</button>
+                    <button onclick="capitalSubmit(this)" class="option option3">jamaika</button>
+                    <button onclick="capitalSubmit(this)" class="option option4">wolves</button>
+                    <button onclick="playAgainCapitals()" class="playAgainBtn">Play Again</button>
+                </div>
+            </div>
+            
+            <div class="lostMsg">
+                <p>you lost with a score of <span class="score"></span> points</p>
+                         <button onclick="playAgainCapitals()" class="lostplayAgainBtn newGameBtn">Play Again</button>
+                         <button onclick="backToLobby()" class="playAgainBtn newGameBtn backtoLobbyBtn">Back To Lobby</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flagsQuiz">
+        <div class="container flagQuizContainer">
+            <h1>Flags Quiz</h1>
+            <div class="game">
+                <img class="countryFlag" src="data/abw.svg" alt="">
+                <p>which country does this flag belong to?</p>
+                <div class="options">
+                    <button onclick="capitalSubmit(this)" class="option option1">algeria</button>
+                    <button onclick="capitalSubmit(this)" class="option option2">United states</button>
+                    <button onclick="capitalSubmit(this)" class="option option3">jamaika</button>
+                    <button onclick="capitalSubmit(this)" class="option option4">wolves</button>
+                    <button onclick="playAgainFlag()" class="playAgainBtn">Play Again</button>
+                </div>
+            </div>
+            <div class="lostMsg">
+                <p>you lost with a score of <span class="score"></span> points</p>
+                         <button onclick="playAgainFlag()" class="lostplayAgainBtn newGameBtn">Play Again</button>
+                         <button onclick="backToLobby()" class="playAgainBtn newGameBtn backtoLobbyBtn">Back To Lobby</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
